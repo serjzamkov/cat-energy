@@ -3,6 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/Oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/Oswaldmedium.woff2" as="font">
+  <link rel="stylesheet" href="css/style.css">
   <title>Каталог продукции - Кэт Энерджи</title>
 </head>
 <body>
@@ -19,12 +22,12 @@
     </button>
     <div class="main-nav__wrapper">
       <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="index.html">Главная</a></li>
         <li class="site-list__item site-list__item--active">
-           <a href="#">Главная</a></li>
+          <a href="#">Каталог продукции</a></li>
         <li class="site-list__item">
-           <a href="#">Каталог продукции</a></li>
-        <li class="site-list__item">
-           <a href="#">Подбор программы</a></li>
+          <a href="form.html">Подбор программы</a></li>
       </ul>
     </div>
   </nav>
@@ -33,6 +36,7 @@
   <main class="page-main">
     <section class="catalog">
       <div class="container">
+      <h1 class="catalog__title">Каталог продукции</h1>
         <div class="catalog__item">
           <div class="product__content">
             <img class="" src="#" alt="Cat Energy PRO 500 г">

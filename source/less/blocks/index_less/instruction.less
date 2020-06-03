@@ -1,0 +1,128 @@
+.instruction {
+  margin-bottom: 40px;
+}
+
+.instruction__title {
+  margin-bottom: 25px;
+}
+
+.instruction__list {
+  color: #444444;
+  line-height: 18px;
+}
+
+.instruction__item {
+  display: flex;
+  position: relative;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.instruction__item::before {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 60px;
+  background-color: @green;
+  background-size: 50px;
+  margin-right: 20px;
+  flex-shrink: 0;
+}
+
+.instruction__item--leaf::before {
+  background-image: url("../img/advantage-leaf@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.instruction__item--powder::before {
+  background-image: url("../img/advantage-powder@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.instruction__item--dining::before {
+  background-image: url("../img/advantage-dining@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.instruction__item--clock::before {
+  background-image: url("../img/advantage-clock@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+@media (min-width: 768px) {
+  .instruction {
+    margin-bottom: 37px;
+  }
+
+  .instruction__title {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 67px;
+  }
+
+  .instruction__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    counter-reset: section;
+  }
+
+  .instruction__item::before {
+    width: 80px;
+    height: 80px;
+    margin-right: 50px;
+    margin-bottom: 30px;
+  }
+
+  .instruction__item {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 50%;
+    flex-direction: column;
+    max-width: 325px;
+    min-height: 230px;
+    align-items: initial;
+  }
+
+  .instruction__item:nth-child(1), .instruction__item:nth-child(2) {
+    margin-bottom: 87px;
+  }
+
+  .instruction__description {
+    max-width: 245px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .instruction__item::after {
+    counter-increment: section;
+    content: counter(section) "";
+    position: absolute;
+    left: 110px;
+    top: -28px;
+    font-size: 280px;
+    line-height: 1;
+    font-family: "Oswald", "Arial", sans-serif;
+    color: #f2f2f2;
+    z-index: -1;
+  }
+}
+
+@media (min-width: 1300px) {
+  .instruction {
+    margin-bottom: 0;
+
+  }
+
+  .instruction__list {
+    flex-wrap: nowrap;
+  }
+
+  .instruction__item:nth-child(1), .instruction__item:nth-child(2) {
+    margin-bottom: 0;
+  }
+}

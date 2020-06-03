@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/Oswaldregular.woff2" as="font">
+  <link rel="preload" href="fonts/Oswaldmedium.woff2" as="font">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Подбор программы - Кэт Энерджи</title>
+</head>
+<body>
+  <header class="page-header">
+    <a href="#" class="page-header__logo">
+      <img class="page-header__logo-image" src="img/logo-mobile.svg" width="33" height="38" alt="Cat Energy">
+    </a>
+    <a href="#" class="page-header__logo">
+      <img class="page-header__logo-phrase" src="img/logo-mobile-header.svg" width="101" height="18" alt="Cat Energy">
+    </a>
+  <nav class="main-nav">
+    <button class="main-nav__toggle" type="button">
+      Открыть меню
+    </button>
+    <div class="main-nav__wrapper">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item">
+          <a href="index.html">Главная</a></li>
+        <li class="site-list__item">
+          <a href="catalog.html">Каталог продукции</a></li>
+        <li class="site-list__item site-list__item--active">
+          <a href="#">Подбор программы</a></li>
+      </ul>
+    </div>
+  </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="forming">
+      <div class="container">
+      <h1 class="forming__title">Подбор программы</h1>
+      <p class="forming__text">Заполните анкету и мы подберем программу питания для вашего кота</p>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <fieldset class="forming__parameters">
+            <input class="form__input form__input--name" type="text" placeholder="Барсик" required>
+            <input class="form__input form__input--weight" type="text" placeholder="7" required>
+            <input class="form__input form__input--age" type="text" placeholder="7">
+          </fieldset>
+          <fieldset>
+            <ul class="forming__option radio__option">
+              <li>
+                <input name="radio-item" type="radio" id="slimming">
+                <label class="form__input form__input--radio" for="slimming">Похудение</label>
+              </li>
+              <li>
+                <input name="radio-item" type="radio" id="mass-gain">
+                <label class="form__input form__input--radio" for="mass-gain">Набор массы</label>
+              </li>
+              <li>
+                <input name="radio-item" type="radio" id="need-advice">
+                <label class="form__input form__input--radio" for="need-advice">Не знаю (Нужен ваш совет)</label>
+              </li>
+            </ul>
+          </fieldset>
+          <fieldset class="contacts">
+            <h3 class="contacts__title title__divide">Контактные данные (владельца кота)</h3>
+            <div class="contacts__row">
+              <div class="contacts__block">
+                <label class="form__base form__base--item">
+                  <span class="form__title">E-mail:*</span>
+                  <input class="form__input--email" type="email" placeholder="kuklachev@gmail.com" required>
+                  <!-- place svg here -->
+                </label>
+              </div>
+              <div class="contacts__block">
+                <label class="form__base form__base--item">
+                  <span class="form__title">Телефон:*</span>
+                  <input class="form__input--tel" type="tel" placeholder="8 (960) 900-60-90" required>
+                  <!-- place svg here -->
+                </label>
+              </div>
+            </div>
+          </fieldset>
+          <div class="comment comment__base">
+            <label class="comment__title title__divide" for="txt-area">Комментарий</label>
+            <textarea class="comment__textarea" row="10" id="txt-area" placeholder="Расскажите обо всех повадках кота">
+            </textarea>
+          </div>
+
+            <fieldset>
+              <h3 class="extra-filter__title title__divide" for="txt-area">Дополнительно</h3>
+              <input class="filter__input" type="checkbox" id="tick-1" checked>
+              <label for="tick-1">Сахарозаменитель</label>
+              <input class="filter__input" type="checkbox" id="tick-2">
+              <label for="tick-2">Питьевая вода</label>
+              <input class="filter__input" type="checkbox" id="tick-3">
+              <label for="tick-3">Молоко</label>
+              <input class="filter__input" type="checkbox" id="tick-4">
+              <label for="tick-4">Витамины</label>
+            </fieldset>
+            <div class="forming__button button__block--x2">
+              <button class="forming__comment__button" type="submit">Отправить заявку</button>
+            </div>
+            <div class="required__block--x2">
+              <p class="required__text">* — Обязательные поля</p>
+            </div>
+
+        </form>
+    </section>
+
+    <div class="map">
+      <section class="invite-card">
+        <h4 class="invite-card__title">приглашаем к сотрудничеству дилеров!</h4>
+        <p class="invite-card__text">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      </section>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123688!2d30.320894615651014!3d59.93879686904841!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1523735281602" allowfullscreen=""></iframe>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <a class="page-footer__logo" href="#">
+      <!-- svg tag here -->
+    </a>
+    <ul class="footer__social social__links">
+      <li class="social__link"></li>
+      <li class="social__link"></li>
+      <li class="social__link"></li>
+    </ul>
+    <a class="page-footer__copyright" href="https://htmlacademy.ru/">
+      <span class="copyright__item">HTML Academy</span>
+      <!-- svg tag here -->
+    </a>
+  </footer>
+</body>
+</html>
