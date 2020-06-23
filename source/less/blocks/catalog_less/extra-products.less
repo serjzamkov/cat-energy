@@ -1,0 +1,241 @@
+.extra-products {
+  overflow: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.extra-products__list {
+  position: relative;
+  margin-bottom: 35px;
+}
+
+.extra-products__title {
+  position: relative;
+  width: 225px;
+  text-transform: none;
+  padding-bottom: 31px;
+}
+
+.extra-products__items {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid #d9d9d9;
+  margin-bottom: 40px;
+}
+
+.extra-products__row {
+  display: flex;
+  flex-wrap: wrap;
+  // flex-direction: column;
+  width: 100%;
+  margin-bottom: 17px;
+}
+
+.extra-products__subtitle {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 10px;
+  border-top: 1px solid #cdcdcd;
+}
+
+.extra-products__option, .extra-products__price {
+  max-width: 50%;
+  flex: 0 0 50%;
+  text-align: left;
+  line-height: 14px;
+  color: #444444;
+  margin-bottom: 15px;
+}
+
+.extra-products__price {
+  text-align: right;
+}
+
+.gift-banner {
+  box-sizing: border-box;
+  width: auto;
+  height: 289px;
+  text-align: center;
+  background-image: url("../img/gift-photo-mobile.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: @green;
+  padding-top: 65px;
+
+  @media (min-resolution: 144px), (min-resolution: 1.5dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+  }
+
+  &__text {
+    padding:0 50px;
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+  }
+  &__icon {
+    margin-bottom: 55px;
+  }
+}
+
+@media (min-width:768px) {
+
+  .extra-products {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .extra-products {
+    margin-bottom: 75px;
+  }
+
+  .extra-products__title {
+    font-size: 36px;
+    line-height: 36px;
+    width: 340px;
+    padding-left: 37px;
+    padding-right: 34px;
+    margin-bottom: 47px;
+  }
+
+  .extra-products__items {
+    margin-bottom: 70px;
+  }
+
+  .extra-products__row {
+    box-sizing: border-box;
+    border: 1px solid #e6e6e6;
+    border-bottom: 0;
+    padding: 27px 40px;
+    margin-bottom: 0;
+  }
+
+  .extra-products__subtitle {
+    width: initial;
+    font-size: 20px;
+    border: none;
+    padding-top: 0;
+    padding-bottom: 24px;
+  }
+
+  .extra-products__option, .extra-products__price {
+    font-size: 16px;
+    line-height: 20px;
+    max-width: initial;
+    text-align: right;
+    flex: initial;
+    padding-top: 3px;
+    margin-bottom: 0;
+    margin-left: auto;
+  }
+
+  .extra-products__option {
+    flex-grow: 1;
+    margin-right: 54px;
+  }
+
+  .gift-banner {
+    height: 200px;
+    text-align: left;
+    padding-left: 90px;
+    background-image: url("../img/gift-photo-tablet.jpg");
+
+    @media (min-resolution: 144px), (min-resolution: 1.5dppx) {
+    background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
+
+    &__text {
+      display: inline-block;
+      width: 170px;
+      margin-left: 225px;
+
+    }
+    &__icon {
+      display: inline-block;
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media (min-width:1300px) {
+
+  .extra-products {
+    overflow: initial;
+    box-sizing: border-box;
+    max-width: 1300px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 88px;
+  }
+
+  .extra-products__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 0;
+  }
+
+  .extra-products__items {
+    display: flex;
+    width: 895px;
+    margin-bottom: 0;
+  }
+
+  .extra-products__row {
+    flex-direction: row;
+    border-left: 0;
+    border-right: 0;
+    align-items: center;
+    padding: 15px 0;
+  }
+
+  .extra-products__subtitle {
+    width: 245px;
+    padding-bottom: 0;
+    margin-right: 40px;
+  }
+
+  .extra-products__option {
+    max-width: 165px;
+    margin-right: 40px;
+    // text-align: left;
+  }
+
+  .extra-products__price {
+    max-width: initial;
+  }
+
+  .extra-products__option, .extra-products__price {
+    text-align: left;
+    padding-top: 6px;
+    margin-left: 40px;
+  }
+
+  .extra-products__button {
+    flex: 0 0 27%;
+    max-width: 27%;
+    margin-left: auto;
+    // margin-right: 40px;
+  }
+
+  .gift-banner {
+    display: inline-block;
+    width: 245px;
+    height: 289px;
+    text-align: center;
+    padding-left: 0;
+    background-image: url("../img/gift-photo-desktop@2x.jpg");
+  margin-left: auto;
+
+    &__text {
+      margin: 0;
+      padding: 0 35px;
+      width: initial;
+    }
+    &__icon {
+      margin-bottom: 55px;
+    }
+  }
+}
