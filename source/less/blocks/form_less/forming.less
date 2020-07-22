@@ -29,7 +29,7 @@
     position: relative;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: flex-end;
+    justify-content: space-between;
     align-items: center;
     font-size: 16px;
     line-height: 18px;
@@ -39,12 +39,12 @@
   &--text {
     color: #222222;
     padding-right: 15px;
-    // white-space: pre;
+    white-space: pre;
   }
 }
 
 .form__input {
-  // width: 100%;
+  width: 100%;
   // flex-grow: 0;
   color: #222222;
   text-transform: uppercase;
@@ -54,6 +54,7 @@
   padding: 13px 15px;
   box-sizing: border-box;
   outline: none;
+  overflow: hidden;
   transition: box-shadow 0.3s ease;
   &:hover {
     box-shadow: inset 0px 0px 0px 1px #cdcdcd;
@@ -213,7 +214,7 @@ input[type="radio"]:checked::after {
   color: #222222;
   padding-right: 11px;
   border: none;
-  // white-space: pre;
+  white-space: pre;
 }
 
 .comment {
@@ -498,6 +499,7 @@ input[type="radio"]:checked::after {
   }
 
   .comment__textarea {
+    width: initial;
     padding-top: 16px;
     min-height: 174px;
     margin-left: 40px;
